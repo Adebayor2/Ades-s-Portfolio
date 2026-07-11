@@ -20,7 +20,7 @@ const LockScreen = ({ onUnlock }) => {
     onUnlock();
   };
 
-  // Using a realistic Windows 11 style abstract bloom image
+
   const bgImage = "https://images.unsplash.com/photo-1617042375876-a13e36732a04?q=80&w=2564&auto=format&fit=crop";
 
   return (
@@ -45,7 +45,7 @@ const LockScreen = ({ onUnlock }) => {
       />
       <div className="absolute inset-0 bg-black/20" />
 
-      {/* Time & Date (Slides up and fades out on login) */}
+
       <AnimatePresence>
         {!showLogin && (
           <motion.div
