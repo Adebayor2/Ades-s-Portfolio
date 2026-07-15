@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/desktop" element={<DesktopApp />} />
+        <Route path="/" element={<DesktopApp />} />
 
         <Route
           path="/admin"
@@ -26,7 +26,7 @@ function App() {
           <Route path="messages" element={<AdminMessages />} />
         </Route>
 
-        <Route path="*" element={<Navigate to="/desktop" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
