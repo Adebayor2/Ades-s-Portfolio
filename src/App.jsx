@@ -10,7 +10,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/desktop" replace />} />
         <Route path="/desktop" element={<DesktopApp />} />
 
         <Route
